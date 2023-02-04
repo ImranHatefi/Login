@@ -44,7 +44,7 @@ signInBtn.addEventListener("click", () => {
   );
   localStorage.setItem("current", JSON.stringify(currentUser));
 
-  currentUser || alert("User information is wrong!!!");
+  currentUser ? window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" :alert("User information is wrong!!!");
 });
 
 const forgotbtn = document.getElementById("forgot-pass");
